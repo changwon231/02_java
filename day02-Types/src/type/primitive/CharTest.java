@@ -14,6 +14,10 @@ public class CharTest {
 		// 2. 초기화 : 변수이름 = 값;
 		input = 'a';
 		
+		/*
+		 * input = 'A+';  // 두글자 이상을 저장하려는 오류
+		 * input = a;	  // '' 따옴표 안에 문자를 쓰지 않았으므로 오류
+		 */
 		// 3. 사용
 		System.out.println("input = " + input);
 		
