@@ -42,7 +42,7 @@ public class MultipleOfTwo {
 		mod = input%2;
 		
 		// 3. 사용
-		if (mod == 0) {
+		if (input % 2 == 0) {
 			result = "입니다.";
 		}else{
 			result = "아닙니다.\n나머지가 1입니다.";
