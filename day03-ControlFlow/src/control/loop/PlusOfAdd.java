@@ -16,7 +16,7 @@ public class PlusOfAdd {
 		
 		// 3. 사용
 		while(d <= 100) {
-			if(d % 2 == 0) {
+			if(d % 2 == 1) {
 				sum += d;
 			}
 			

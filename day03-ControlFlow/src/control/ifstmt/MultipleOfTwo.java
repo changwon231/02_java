@@ -28,6 +28,7 @@ public class MultipleOfTwo {
 		// 1. 선언
 		int input;
 		int mod;
+		int i = 0;
 		String result;
 		Scanner scan;
 		
@@ -36,18 +37,27 @@ public class MultipleOfTwo {
 				
 		// 2. 초기화
 		scan = new Scanner(System.in);
+		while( i <10) {
+			
+		
 		input = scan.nextInt();
 
 		// 2.1 판단 조건
 		mod = input%2;
 		
 		// 3. 사용
-		if (input % 2 == 0) {
-			result = "입니다.";
+		// 입력값이 0인 경우 : " 0은 배수 판별할 수 없습니다."
+		if (input == 0) {
+			result = "배수를 판별할 수 없습니다.";
+		}else if (input % 2 == 0) {
+			// 위의() 안의 연산은 연산자 우선 순위에 의해
+			// input % 2 의 연산이 먼저 수행되고 난 뒤
+			// 그 결과가 0과 같은지 == 연산이 수행됩니다.
+			result = "2의 배수 입니다.";
 		}else{
-			result = "아닙니다.\n나머지가 1입니다.";
+			result = "2의 배수가 아닙니다.\n나머지가 1입니다.";
 		}
-		System.out.printf("입력값 %d 은(는) 2의 배수 %s",input,result);
+		System.out.printf("입력값 %d 은(는)  %s%n",input,result);
+	}i++;
 	}
-
 }
