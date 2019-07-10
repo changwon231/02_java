@@ -11,7 +11,7 @@ package control.loop;
 public class NineNineTable3 {
 
 	public static void main(String[] args) {
-		int max = 2;
+		int dan = 1;
 		int stage = 0;
 		int times = 5;
 
@@ -21,14 +21,14 @@ public class NineNineTable3 {
 
 			for (int j = 1; j < 10; j++) {
 
-				for (int i = max; i < 3; i++) {
+				for (int i = dan; i <4; i++) {
 					System.out.printf("%2d  X %2d = %2d  ", i, j, (i * j));
 					
 				}
 				times++;
 				System.out.println("");
 
-			}max+=3;
+			}
 			System.out.println("");
 		}
 
