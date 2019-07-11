@@ -67,6 +67,7 @@ public class ArraySalaries {
 		System.out.printf("salaries[9] = %d%n",salaries[9]);
 		
 		// 배열이 생성되면 길이를 나타내는 length 변수가 
+		
 		// JVM(자바 가상 머신)에 의해 생성됨.
 		System.out.println("salaries 배열의 길이 : " + salaries.length);
 		
