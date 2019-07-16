@@ -1,4 +1,7 @@
 package type.reference;
+
+import java.util.Scanner;
+
 /**
  * 기본형 8가지 외의 모든 타입은 
  * 참조형 타입을 테스트 하는 클래스
@@ -33,7 +36,11 @@ public class ReferenceTest {
 		
 		// 3. 사용
 		System.out.println("name = " + name);
-		
+		Scanner scan = new Scanner(System.in);
+		String i;
+		System.out.println("입력");
+		i = scan.next();
+		System.out.printf("%s", i);
 		
 		
 		

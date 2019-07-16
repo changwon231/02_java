@@ -38,7 +38,7 @@ public class BestPitcher {
 			}
 			
 		}
-		System.out.printf(" 최고의 선수는 %d팀 %d번째 선수!! 방어률은 %f",ii, jj,min);
+		System.out.printf(" 최고의 선수는 %d팀 %d번째 선수!! 방어률은 %.2f",ii, jj,min);
 	}
 
 }
