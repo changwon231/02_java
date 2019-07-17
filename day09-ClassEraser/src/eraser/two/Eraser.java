@@ -74,8 +74,8 @@ public class Eraser {
 	* 남아있는 layer를 체크하는 것
 	*/
 	public void peel(){
-	if (layer >0 ){
-		layer -=1;
+	if (this.layer >0 ){
+		this.layer -=1;
 	}else{
 		System.out.println("더이상 layer가 없습니다/");
 	}	
