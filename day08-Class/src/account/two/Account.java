@@ -39,7 +39,7 @@ public class Account {
 	 * 계좌번호, 계좌 잔액을 매개변수로 받아서
 	 * 입력된 값으로 계좌를 실체화(초기화)하는 생성자
 	 * 
-	 * 중복정의된 생성자
+	 * 중복정의된 생성자 = overloading
 	 * 
 	 * @param newAccNumger
 	 * @param newBalance
