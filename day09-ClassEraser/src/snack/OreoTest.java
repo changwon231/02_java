@@ -34,8 +34,8 @@ public class OreoTest {
 		}
 		
 		// for를 사용하여 모든 쿠키의 크림을 바닐라로 변경
-		for(Oreo oreoBox : oreoBoxs) {
-			oreoBox.changeCream("바닐라");
+		for(int i = 0; i < oreoBoxs.length; i++) {
+			oreoBoxs[i].changeCream("바닐라");
 		}
 		
 		// foreach 사용해서 모든 쿠키의 크림 변경 상태 확인을 위한 출력
