@@ -173,9 +173,12 @@ public class Book {
 	
 	
 	public void print() {
-		System.out.printf("일련번호 : %d ISBN : %s %n 제목 : %s 저자 : %s 출판사 : %s %n 페이지수 : %d "
-				+ "가격 : %d% 제고수량 : d%n",sequence ,isbn, title, author, company, totalPage, price, quantity);
+		System.out.printf("[일련번호 : %d] [ISBN : %s] %n [제목 : %s] [저자 : %s] "
+				+ "[출판사 : %s] %n [페이지수 : %d] [가격 : %d] [제고수량 : %d] %n"
+				,sequence ,isbn, title, author, company, totalPage, price, quantity);
+
 	}
+	
 	
 	
 	

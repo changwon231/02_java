@@ -26,12 +26,12 @@ public class BookShelf {
 		
 		// books의 모든 책 내용을 새로 생성한 1칸 큰 배열에 
 		// 앞쪽부터 복사
-		for(int i = 0 ; i < newBooks.length ; i++) {
+		for(int i = 0 ; i < books.length ; i++) {
 			newBooks[i] = books[i];
 			
 		}
 		// 매개변수로 넘겨진 book은 마지막 새로 생긴 칸에 저장
-		newBooks[newBooks.length+1] = book;
+		newBooks[newBooks.length - 1] = book;
 		
 		this.books = newBooks;
 	}
@@ -88,7 +88,6 @@ public class BookShelf {
 	
 	// 책 한권 얻기 : Book : get(Book book)
 	public Book get(Book book) {
-		Book kk;
 		// 입력된 book 의 sequence 값과 내부 배열에 저장된 
 		// 책들 중 일치하는 sequence 를 가진 책 1권의 정보를 리턴
 		return findBook(book);
