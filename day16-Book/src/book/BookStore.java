@@ -11,50 +11,50 @@ package book;
  * @author Administrator
  *
  */
-public class BookStore {
-	
+public class BookStore{
 	// 1. 맴버 변수 : 북매니저
-	private BookManager manager;
-	
-	// 2. 생성자
-	// (1) 기본생성자 명시
-	public BookStore(){
-		manager = new BookManager();
-	}
-	
-	// (2) 매개변수S 생성자 중복
-	public BookStore(BookManager manager){
-		this.manager = manager;
-	}
-	 // 3. 메소드 선언
-	// (1) 서점에 신간이 들어왔을 때
-	// 매니저에게 신간 정리 (책장에 꼽는 것 등을 부탁)
-	public void add(Book book) {
-		manager.add(book);
-	}
-	
-	// (2) 서점에서 폐기할 도서가 생겼을 때
-	// 매니저에게 폐기 부탁 
-	public void remove(Book book) {
-		manager.remove(book);
-	}
-	
-	// 3. 서점에서 판매 도서의 가격 등 변동이 있을 때 
-	// 매니저에게 부탁해서 가격 태그 등 책 정보 수정을 부탁함 
-	public void set(Book book) {
-		manager.set(book);
-	}
-	
-	// (4) 서점에 온 고객이 책을 찾을 때
-	// 매니저에게 찾아달라고 부탁함
-	public Book get(Book book) {
-		return manager.get(book);
-	}
-	
-	// (5) 우리 서점에서 판매하는 모든 책의 목록을 
-	// 메니저에게 조회해 달라고 부탁함. 
-	public Book[] getAllBooks() {
-		return manager.getAllBooks();
-	}
+		private BookManager manager;
+		
+		// 2. 생성자
+		// (1) 기본생성자 명시
+		public BookStore(){
+			manager = new BookManager();
+		}
+		
+		// (2) 매개변수S 생성자 중복
+		public BookStore(BookManager manager){
+			this.manager = manager;
+		}
+		 // 3. 메소드 선언
+		// (1) 서점에 신간이 들어왔을 때
+		// 매니저에게 신간 정리 (책장에 꼽는 것 등을 부탁)
+		public void add(Book book) {
+			manager.add(book);
+		}
+		
+		// (2) 서점에서 폐기할 도서가 생겼을 때
+		// 매니저에게 폐기 부탁 
+		public void remove(Book book) {
+			manager.remove(book);
+		}
+		
+		// 3. 서점에서 판매 도서의 가격 등 변동이 있을 때 
+		// 매니저에게 부탁해서 가격 태그 등 책 정보 수정을 부탁함 
+		public void set(Book book) {
+			manager.set(book);
+		}
+		
+		// (4) 서점에 온 고객이 책을 찾을 때
+		// 매니저에게 찾아달라고 부탁함
+		public void get(Book book) {
+			manager.get(book);
+		}
+		
+		// (5) 우리 서점에서 판매하는 모든 책의 목록을 
+		// 메니저에게 조회해 달라고 부탁함. 
+		public void getAllBooks() {
+			manager.getAllBooks();
+		}
 	
 }
+

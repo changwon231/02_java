@@ -12,8 +12,9 @@ import book.BookStore;
  * @author Administrator
  *
  */
-public class BookStoreTest {
 
+public class BookStoreTest {
+	
 	public static void main(String[] args) {
 		
 		// 1. 메니저에게 전달할 책장 안에 들어갈 배열
@@ -48,10 +49,9 @@ public class BookStoreTest {
 
 		// 3. 입고된 신간들 모두 확인
 		System.out.println(" 3. ===== 신간 확인 ========");
-		Book[] allBooks = kyobo.getAllBooks();
-		for (Book book: allBooks) {
-			book.print();
-		}
+		kyobo.getAllBooks();
+		
+		
 		
 		// 4. 채식주의자 가격 할인 : set
 		// (1) 가격 할인된 채식주의자 책 정보를 새로 설정
@@ -67,8 +67,6 @@ public class BookStoreTest {
 		// 	   시퀀스 번호만 들어있는 Book 객체를 생성
 		System.out.println(" 5. =====  정보 확인 ========");
 		Book seqBook = new Book(1);
-		Book findBook = kyobo.get(seqBook);
-		findBook.print();
 		
 		// 6. 이 책은 도끼다 폐기 : remove
 		// (1) 폐기할 책의 시퀀스 번호만 알면 폐기 가능
@@ -79,10 +77,11 @@ public class BookStoreTest {
 		
 		// 7. 폐기 확인을 위해 전체 목록 조회
 		System.out.println(" 7. ===== 삭제 후 전체 목록 확인 ========");
-		for (Book book: kyobo.getAllBooks()) {
-			book.print();
-		}
+		kyobo.getAllBooks();
+
+		
 		
 	}
 
+	
 }

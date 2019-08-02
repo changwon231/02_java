@@ -175,10 +175,23 @@ public class Book {
 		this(sequence, isbn, title, auther, company, totalPage);
 		this.price = price;
 	}
+//	
+//	public Book(int sequence, String isbn, String title, String auther, 
+//			String company, int totalPage, int price, int quantity){
+//		this(sequence, isbn, title, auther, company, totalPage, price);
+//		this.quantity = quantity;
+//	}
 	
-	public Book(int sequence, String isbn, String title, String auther, 
-			String company, int totalPage, int price, int quantity){
-		this(sequence, isbn, title, auther, company, totalPage, price);
+	public Book(int sequence, String isbn, String title, String author, String company, int totalPage, int price,
+			int quantity) {
+		super();
+		this.sequence = sequence;
+		this.isbn = isbn;
+		this.title = title;
+		this.author = author;
+		this.company = company;
+		this.totalPage = totalPage;
+		this.price = price;
 		this.quantity = quantity;
 	}
 	
